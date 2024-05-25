@@ -8,20 +8,20 @@ package cocktail;
  *
  * @author ibrah
  */
-public class Ingredients {
+public class Ingredients { 
     protected String name;
     protected int calories;
     protected int volume;
     protected Color color;
 
     public Ingredients(String name, int calories, int volume, Color color) {
-        this.name = name;
+        this.name = name; 
         this.calories = calories;
         this.volume = volume;
         this.color = color;
     }
 
-    public String getName() {
+    public String getName() { 
         return name;
     }
 
@@ -52,7 +52,7 @@ public class Ingredients {
     public void setColor(Color color) {
         this.color = color;
     }
-
+    
     @Override
     public String toString() {
         return "name=" + name + ", calories=" + calories + ", volume=" + volume + ", color=" + color;

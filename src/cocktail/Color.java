@@ -10,11 +10,11 @@ import java.util.HashMap;
  * @author ibrah
  */
 public class Color {
-
+    
    private int r;
-    private int g;
+   private int g;
    private int b;
-
+   
     private static final Map<String, Color> colorMap = new HashMap<>();
     static 
     {
@@ -26,7 +26,7 @@ public class Color {
         colorMap.put("skyblue", new Color(0,255,255));
         colorMap.put("grey", new Color(192,192,192));    
     }
-
+    
     public Color(int r, int g, int b) 
     {
         this.r = r;
@@ -56,7 +56,7 @@ public class Color {
         this.g = (this.g * (totalVolume - otherVolume) + other.g * otherVolume) / totalVolume;
         this.b = (this.b * (totalVolume - otherVolume) + other.b * otherVolume) / totalVolume;
     }
-
+    
     @Override
     public String toString() {
         return "r=" + r + ", g=" + g + ", b=" + b ;
